@@ -35,7 +35,16 @@ public class BumpDetector extends Observable implements SensorEventListener, IBu
         startMonitoring();
     }
 
-    public void startMonitoring() {
+    private void startMonitoring(int delayInMillis) {
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                startMonitoring();
+            }
+        }, delayInMillis);
+    }
+
+    private void startMonitoring() {
         Log.d(_label, "register");
         _sensorManager.registerListener(this, _linearAccelerometer, SensorManager.SENSOR_DELAY_FASTEST);
     }
@@ -83,15 +92,10 @@ public class BumpDetector extends Observable implements SensorEventListener, IBu
             Log.d(_label, "Bump detected!");
 
             fireBumpEvent();
-
-            new Handler().postDelayed(new Runnable() {
-                public void run() {
-                    startMonitoring();
-                }
-            }, WAIT_BETWEEN_BUMPS);
-
+            startMonitoring(WAIT_BETWEEN_BUMPS);
         } else {
             Log.d(_label, "False alarm.");
+
             startMonitoring();
         }
 
