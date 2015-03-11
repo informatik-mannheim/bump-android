@@ -16,7 +16,7 @@ import java.util.Observer;
 public class MainActivity extends ActionBarActivity implements Observer {
 
     private SensorManager _sensorManager;
-    private BumpDetector _bumpDetector;
+    private IBumpDetector _bumpDetector;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
