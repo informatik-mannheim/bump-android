@@ -14,7 +14,7 @@ import java.util.Observer;
 
 public class BumpDetector extends Observable implements SensorEventListener, IBumpDetector {
     private final int WAIT_BETWEEN_BUMPS = 1000;
-    private double adjustment_apple_to_android = 0.1;
+    private final double adjustment_apple_to_android = 0.1;
     private final String _label = "BDETECT";
 
     private static Object _lockobj = new Object();

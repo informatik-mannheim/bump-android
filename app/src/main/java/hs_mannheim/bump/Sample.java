@@ -5,7 +5,10 @@ public class Sample implements Cloneable {
     public double y;
     public double z;
 
-    public Sample(float[] values, double adjustmentFactor) {
+    public Sample(float[] values, double adjustmentFactor) throws IllegalArgumentException {
+        if(values.length != 3) {
+            throw new IllegalArgumentException("values must have a length of 3");
+        }
         this.x = values[0] * adjustmentFactor;
         this.y = values[1] * adjustmentFactor;
         this.z = values[2] * adjustmentFactor;
