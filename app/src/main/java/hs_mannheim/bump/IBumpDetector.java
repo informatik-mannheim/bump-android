@@ -1,7 +1,9 @@
 package hs_mannheim.bump;
 
-import java.util.Observer;
-
 public interface IBumpDetector {
-    void addBumpObserver(Observer observer);
+    void registerListener(BumpEventListener listener);
+    void setThreshold(Threshold threshold);
+    void startMonitoring(int delayInMillis);
+    void startMonitoring();
+    void stopMonitoring();
 }

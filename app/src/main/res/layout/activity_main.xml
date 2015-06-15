@@ -9,14 +9,45 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/bump_text"
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="180dp"
-        android:layout_centerHorizontal="true"
+        android:text="Experiment 1"
+        android:id="@+id/button_firstExperiment"
+        android:clickable="true"
+        android:onClick="goToFirstExperimentActivity"
+        android:nestedScrollingEnabled="false"
+        android:enabled="true"
         android:layout_centerVertical="true"
-        android:visibility="invisible"
-        android:text="@string/bump" />
+        android:layout_centerHorizontal="true" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Experiment 2"
+        android:id="@+id/button_secondExperiment"
+        android:onClick="goToSecondExperimentActivity"
+        android:layout_below="@+id/button_firstExperiment"
+        android:layout_alignStart="@+id/button_firstExperiment"
+        android:layout_marginTop="46dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Applikation"
+        android:id="@+id/button"
+        android:onClick="goToApplicationActivity"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="78dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Options"
+        android:id="@+id/button3"
+        android:layout_marginBottom="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="goToOptions" />
 </RelativeLayout>
