@@ -1,0 +1,12 @@
+{
+  "name": "socket.io-bumpServer",
+  "version": "0.0.0",
+  "description": "Server to exchange data on bump between android phones using socket.io",
+  "main": "server.js",
+  "author": "Benjamin Grab",
+  "private": true,
+  "license": "BSD",
+  "dependencies": {
+    "express": "3.4.8"
+  }
+}
