@@ -3,8 +3,6 @@ package hs_mannheim.bump;
 import android.test.suitebuilder.annotation.SmallTest;
 
 import junit.framework.TestCase;
-import hs_mannheim.bump.Application.Delta;
-import hs_mannheim.bump.Application.Sample;
 
 public class SampleTest extends TestCase {
 

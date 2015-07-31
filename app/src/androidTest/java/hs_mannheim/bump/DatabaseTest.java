@@ -8,12 +8,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import hs_mannheim.bump.Application.Sample;
-import hs_mannheim.bump.Application.Threshold;
-import hs_mannheim.bump.Experiments.DBContract;
-import hs_mannheim.bump.Experiments.DBHelper;
-import hs_mannheim.bump.Experiments.ExperimentData;
-import hs_mannheim.bump.Experiments.ExperimentType;
 
 /**
  * Created by benjamin on 14/05/15.

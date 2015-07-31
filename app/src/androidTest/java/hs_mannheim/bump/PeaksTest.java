@@ -5,9 +5,6 @@ import junit.framework.TestCase;
 
 import java.util.ArrayList;
 
-import hs_mannheim.bump.Application.Peaks;
-import hs_mannheim.bump.Application.Sample;
-
 public class PeaksTest extends TestCase {
     public void testReadPeaks() {
         // Arrange

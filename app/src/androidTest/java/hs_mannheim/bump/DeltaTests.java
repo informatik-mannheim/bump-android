@@ -2,9 +2,6 @@ package hs_mannheim.bump;
 
 import junit.framework.TestCase;
 
-import hs_mannheim.bump.Application.Delta;
-import hs_mannheim.bump.Application.Threshold;
-
 public class DeltaTests extends TestCase {
 
     public void testExceedsThreshold() {

@@ -8,12 +8,6 @@ import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
-import hs_mannheim.bump.Application.Sample;
-import hs_mannheim.bump.Application.Threshold;
-import hs_mannheim.bump.Experiments.ExperimentData;
-import hs_mannheim.bump.Experiments.ExperimentType;
-
-
 /**
  * Created by benjamin on 14/05/15.
  */

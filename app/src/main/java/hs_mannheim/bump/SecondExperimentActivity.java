@@ -61,6 +61,9 @@ public class SecondExperimentActivity extends ActionBarActivity implements BumpE
         mBumpDetector.startMonitoring();
 
 //        mServerManager = new ServerManager("http://141.19.142.50:3000/", this);
+        /**
+         * Das hier muss konfigurierbar sein. Der Node-Server auf 141.19.142.50:3000 läuft nicht unbedingt immer
+         */
         mServerManager = new ServerManager("http://192.168.1.78:3000", this);
         mServerManager.connect();
         mServerManager.registerListener(this);
